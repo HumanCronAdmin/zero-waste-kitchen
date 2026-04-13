@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://humancronadmin.github.io/zero-waste-kitchen/sitemap.xml
