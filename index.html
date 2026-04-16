@@ -19,78 +19,78 @@
 </head>
 <body>
 <nav class="nav">
-  <a href="index.html" class="nav-brand">ZeroWaste<span>Kitchen</span></a>
-  <div class="nav-links">
-    <a href="database.html">Database</a>
-    <a href="#guides">Guides</a>
-    <a href="#about">About</a>
-  </div>
+ <a href="index.html" class="nav-brand">ZeroWaste<span>Kitchen</span></a>
+ <div class="nav-links">
+ <a href="database.html">Database</a>
+ <a href="#guides">Guides</a>
+ <a href="#about">About</a>
+ </div>
 </nav>
 
 <header class="hero">
-  <h1>Your kitchen, plastic-free.</h1>
-  <p>Every plastic-free swap, compared and verified.</p>
-  <a href="database.html" class="btn btn-lime">Browse the Database</a>
+ <h1>Your kitchen, plastic-free.</h1>
+ <p>Every plastic-free swap, compared and verified.</p>
+ <a href="database.html" class="btn btn-lime">Browse the Database</a>
 </header>
 
 <section class="section">
-  <h2 class="section-title">The Problem</h2>
-  <p class="section-subtitle">Ditching plastic in the kitchen is harder than it should be.</p>
-  <div class="card-grid" id="problems"></div>
+ <h2 class="section-title">The Problem</h2>
+ <p class="section-subtitle">Ditching plastic in the kitchen is harder than it should be.</p>
+ <div class="card-grid" id="problems"></div>
 </section>
 
 <section class="section">
-  <h2 class="section-title">How It Works</h2>
-  <div class="steps" id="steps"></div>
+ <h2 class="section-title">How It Works</h2>
+ <div class="steps" id="steps"></div>
 </section>
 
 <section class="section">
-  <h2 class="section-title">The Database So Far</h2>
-  <div class="stat-grid" id="stats"></div>
+ <h2 class="section-title">The Database So Far</h2>
+ <div class="stat-grid" id="stats"></div>
 </section>
 
 <section class="section" id="about">
-  <div class="cta" style="margin:0;border-radius:var(--radius)">
-    <h2>Start swapping today</h2>
-    <p>Browse real products with honest comparisons. Verified materials, no greenwashing.</p>
-    <a href="database.html" class="btn btn-outline">Explore Products</a>
-  </div>
+ <div class="cta" style="margin:0;border-radius:var(--radius)">
+ <h2>Start swapping today</h2>
+ <p>Browse real products with honest comparisons. Verified materials, no greenwashing.</p>
+ <a href="database.html" class="btn btn-outline">Explore Products</a>
+ </div>
 </section>
 
 <footer class="footer">
-  <p>ZeroWasteKitchen is an open-source project by
-    <a href="https://github.com/humancronadmin" target="_blank" rel="noopener">humancronadmin</a>.
-  </p>
+ <p>ZeroWasteKitchen is an open-source project by
+ <a href="https://github.com/humancronadmin" target="_blank" rel="noopener">humancronadmin</a>.
+ </p>
 </footer>
 
 <script>
 const problems=[
-  {icon:"🥤",title:"Plastic everywhere",desc:"The average kitchen contains over 50 single-use plastic items. Most are easily replaceable."},
-  {icon:"🏷️",title:"Greenwashing is real",desc:"Labels like 'eco-friendly' and 'natural' are unregulated. We verify what actually works."},
-  {icon:"🔍",title:"Alternatives are scattered",desc:"Good products exist but they are buried across dozens of stores and blogs. We gather them in one place."}
+ {icon:"🥤",title:"Plastic everywhere",desc:"The average kitchen contains over 50 single-use plastic items. Most are easily replaceable."},
+ {icon:"🏷️",title:"Greenwashing is real",desc:"Labels like 'eco-friendly' and 'natural' are unregulated. We verify what works."},
+ {icon:"🔍",title:"Alternatives are scattered",desc:"Good products exist but they are buried across dozens of stores and blogs. We gather them in one place."}
 ];
 const stepData=[
-  {title:"Search by need",desc:"Filter by category, material, price, or what plastic item you want to replace."},
-  {title:"Compare honestly",desc:"See real pros, cons, durability ratings, and what each product is best for."},
-  {title:"Swap with confidence",desc:"Pick the right product the first time. No guessing, no regret purchases."}
+ {title:"Search by need",desc:"Filter by category, material, price, or what plastic item you want to replace."},
+ {title:"Compare ",desc:"See real pros, cons, durability ratings, and what each product is best for."},
+ {title:"Swap with confidence",desc:"Pick the right product the first time. No guessing, no regret purchases."}
 ];
 const statsData=[
-  {num:"55+",label:"Products reviewed"},
-  {num:"8",label:"Categories covered"},
-  {num:"7",label:"Material types"},
-  {num:"0",label:"Affiliate links"}
+ {num:"55+",label:"Products reviewed"},
+ {num:"8",label:"Categories covered"},
+ {num:"7",label:"Material types"},
+ {num:"0",label:"Affiliate links"}
 ];
 
 document.getElementById("problems").innerHTML=problems.map(p=>`
-  <div class="card"><div class="card-icon">${p.icon}</div><h3>${p.title}</h3><p>${p.desc}</p></div>
+ <div class="card"><div class="card-icon">${p.icon}</div><h3>${p.title}</h3><p>${p.desc}</p></div>
 `).join("");
 
 document.getElementById("steps").innerHTML=stepData.map(s=>`
-  <div class="step"><h3>${s.title}</h3><p>${s.desc}</p></div>
+ <div class="step"><h3>${s.title}</h3><p>${s.desc}</p></div>
 `).join("");
 
 document.getElementById("stats").innerHTML=statsData.map(s=>`
-  <div><div class="stat-num">${s.num}</div><div class="stat-label">${s.label}</div></div>
+ <div><div class="stat-num">${s.num}</div><div class="stat-label">${s.label}</div></div>
 `).join("");
 </script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6776399834647681" crossorigin="anonymous"></script>
